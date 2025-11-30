@@ -1,5 +1,26 @@
 # MCP-Council Ideation Report 
 
+## Problem Statement
+
+Currently, converting a REST API into an MCP server requires:
+- Manual coding of tool definitions, handlers, and protocol wrappers
+- Setting up infrastructure (Express, MCP protocol, deployment)
+- Publishing to NPM and submitting to MCP Registry
+
+This process takes hours/days and requires technical expertise, limiting MCP ecosystem growth.
+
+## Vision
+
+**MCP-Council automates the entire pipeline**: User provides API endpoints → Platform generates MCP server → Auto-deploys and publishes.
+
+Make any REST API accessible to AI assistants in minutes, not days.
+
+## Target Users
+
+- **Phase 1**: Developers with public APIs wanting MCP integration
+- **Phase 2-3**: Companies with authenticated APIs, paid tier users
+- **Phase 4**: Non-technical users building custom APIs + MCP tools
+
 ## Section: Phase Distribution of the Project and scopes
 
 ### Phase 1:
@@ -62,3 +83,11 @@ We will add the option for the users to create their own APIs as well as Tools
 [] For each MCP Server created with help of users we will add a record in MCP Registry
 [] Store MCP Registry and npm package in db 
 [] deployement will be ours 
+
+
+## Section: Key Features (What Makes This Unique)
+
+1. **Full Automation**: Zero manual coding required
+2. **End-to-End Pipeline**: From API input → Deployed + Published server
+3. **Based on Production Framework**: Uses proven patterns from Framework.md
+4. **Multi-Phase Growth**: Public APIs → Auth APIs → Credits → Custom APIs
