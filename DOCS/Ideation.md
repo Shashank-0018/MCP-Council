@@ -45,6 +45,29 @@ We will start customising our platform by adding concept of 'credits' each credi
 
 We will add the option for the users to create their own APIs as well as Tools 
 
+### Phase 5: AI-Powered Automatic Tool Generation 🤖
+
+**Goal**: Zero-input MCP server creation - user just provides a URL (API documentation, website, etc.)
+
+**How it works**:
+- User pastes a link (e.g., https://pokeapi.co, OpenAPI spec URL, GitHub API docs)
+- AI system analyzes the documentation/website
+- Automatically extracts endpoints, parameters, response schemas
+- Generates tool definitions with descriptions
+- Creates complete MCP server without any manual input
+
+**AI Capabilities**:
+- Parse OpenAPI/Swagger specs
+- Scrape HTML API documentation and understand structure
+- Infer parameter types and descriptions using LLM
+- Generate human-readable tool names and descriptions
+- Detect authentication requirements
+
+**User Experience**:
+1. Paste URL → Click "Generate"
+2. AI shows preview of detected tools
+3. User approves → MCP server deployed automatically 
+
 ## Section: MVP
 
 ### Part: Google Login
