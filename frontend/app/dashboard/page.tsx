@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Sparkles, LogOut, Settings } from "lucide-react";
 import { signOut } from "../auth/actions";
+import ToolGeneratorForm from "@/components/dashboard/ToolGeneratorForm";
 
 export default async function DashboardPage() {
     const supabase = await createClient();
@@ -74,20 +75,13 @@ export default async function DashboardPage() {
                     </Card>
                 </div>
 
-                {/* Welcome Message */}
-                <Card className="glass-dark p-8 border-accent/20 text-center">
-                    <Sparkles className="w-16 h-16 text-accent mx-auto mb-4" />
-                    <h2 className="text-2xl font-bold mb-3">
-                        Welcome to <span className="gradient-text">MCP-Council</span>!
-                    </h2>
-                    <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                        You're all set! This dashboard will soon allow you to manage your API
-                        endpoints, generate MCP tools, and deploy servers. Stay tuned for Phase 1 features.
-                    </p>
-                    <Button className="glow-primary">
-                        <Sparkles className="w-4 h-4 mr-2" />
-                        Create Your First API Tool
-                    </Button>
+                {/* Tool Generator */}
+                <Card className="glass-dark p-6 border-primary/10">
+                    <div className="flex items-center gap-3 mb-6">
+                        <Sparkles className="w-6 h-6 text-primary" />
+                        <h2 className="text-2xl font-bold">Create MCP Tool</h2>
+                    </div>
+                    <ToolGeneratorForm />
                 </Card>
             </div>
         </main>
