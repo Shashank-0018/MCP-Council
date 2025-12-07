@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Sparkles } from "lucide-react";
 
 const navigation = [
-    { name: "Features", href: "#features" },
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Docs", href: "#docs" },
+    { name: "About", href: "/about" },
+    { name: "Pricing", href: "/pricing" },
+    { name: "Docs", href: "/docs" },
+    { name: "Playground", href: "/playground" },
 ];
 
 export default function Header() {
@@ -26,12 +26,12 @@ export default function Header() {
                 <div className="container mx-auto px-4">
                     <div className="flex items-center justify-between h-16">
                         {/* Logo */}
-                        <div className="flex items-center gap-2">
+                        <a href="/" className="flex items-center gap-2">
                             <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                                 <Sparkles className="w-5 h-5 text-white" />
                             </div>
                             <span className="text-xl font-bold gradient-text">MCP-Council</span>
-                        </div>
+                        </a>
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex items-center gap-8">
