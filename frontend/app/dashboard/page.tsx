@@ -89,27 +89,6 @@ export default async function DashboardPage() {
                         Create Your First API Tool
                     </Button>
                 </Card>
-
-                {/* User Info (Debug) */}
-                <Card className="glass-dark p-6 border-primary/10 mt-8">
-                    <h3 className="font-bold mb-4">Session Info</h3>
-                    <div className="space-y-2 text-sm font-mono">
-                        <div>
-                            <span className="text-muted-foreground">User ID:</span> {user.id}
-                        </div>
-                        <div>
-                            <span className="text-muted-foreground">Email:</span> {user.email}
-                        </div>
-                        <div>
-                            <span className="text-muted-foreground">Provider:</span>{" "}
-                            {user.app_metadata.provider}
-                        </div>
-                        <div>
-                            <span className="text-muted-foreground">Created:</span>{" "}
-                            {new Date(user.created_at).toLocaleDateString()}
-                        </div>
-                    </div>
-                </Card>
             </div>
         </main>
     );

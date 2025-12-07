@@ -130,35 +130,6 @@ export default async function SettingsPage() {
                         hasGoogle={hasGoogle}
                     />
 
-                    {/* Debug: Show Profile Data */}
-                    <Card className="glass-dark p-6 border-accent/20">
-                        <div className="flex items-center gap-3 mb-4">
-                            <Key className="w-5 h-5 text-accent" />
-                            <h2 className="text-xl font-bold">Debug: Profile & Auth Data</h2>
-                        </div>
-
-                        <div className="space-y-4">
-                            <div>
-                                <h3 className="font-semibold mb-2">Profile Table:</h3>
-                                <pre className="text-xs font-mono bg-muted/20 p-4 rounded overflow-x-auto">
-                                    {JSON.stringify(profile, null, 2)}
-                                </pre>
-                            </div>
-
-                            <div>
-                                <h3 className="font-semibold mb-2">Auth Identities:</h3>
-                                <pre className="text-xs font-mono bg-muted/20 p-4 rounded overflow-x-auto">
-                                    {JSON.stringify(user.identities, null, 2)}
-                                </pre>
-                            </div>
-
-                            <div className="text-sm">
-                                <p><strong>has_password (from profiles):</strong> {hasEmailPassword ? '✅ true' : '❌ false'}</p>
-                                <p><strong>hasGoogle (from identities):</strong> {hasGoogle ? '✅ true' : '❌ false'}</p>
-                            </div>
-                        </div>
-                    </Card>
-
                     {/* Danger Zone */}
                     <Card className="glass-dark p-6 border-destructive/20">
                         <div className="flex items-center gap-3 mb-4">
