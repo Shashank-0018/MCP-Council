@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MCP-Council Frontend
 
-## Getting Started
+## 🚀 Overview
 
-First, run the development server:
+The modern, premium UI for MCP-Council - a platform that automates the conversion of REST APIs into AI-powered MCP (Model Context Protocol) servers.
+
+## 🎨 Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: ShadCN UI
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Font**: Inter (sans-serif), JetBrains Mono (monospace)
+
+## ✨ Features
+
+- ⚡ **Premium Design**: Glassmorphic UI with vibrant Electric Blue, Purple, and Cyber Green palette
+- 🎭 **Dark Mode First**: Optimized for dark mode with stunning animations
+- 📱 **Fully Responsive**: Mobile-first design that scales beautifully
+- 🎬 **Smooth Animations**: Framer Motion for buttery-smooth interactions
+- 🎯 **SEO Optimized**: Proper metadata, semantic HTML, and Next.js optimizations
+- ⚡ **Performance**: Optimized with Next.js 16 and Turbopack
+
+## 🏃‍♂️ Getting Started
+
+### Prerequisites
+
+- Node.js 20+ and npm
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+frontend/
+├── app/
+│   ├── layout.tsx          # Root layout with fonts & metadata
+│   ├── page.tsx            # Landing page
+│   └── globals.css         # Global styles & design tokens
+├── components/
+│   ├── ui/                 # ShadCN UI components
+│   ├── landing/            # Landing page sections
+│   │   ├── Hero.tsx
+│   │   ├── Features.tsx
+│   │   ├── HowItWorks.tsx
+│   │   └── CTA.tsx
+│   └── shared/             # Reusable components
+│       ├── Header.tsx
+│       └── Footer.tsx
+├── lib/
+│   └── utils.ts            # Utility functions
+└── public/                 # Static assets
+```
 
-## Learn More
+## 🎨 Design System
 
-To learn more about Next.js, take a look at the following resources:
+### Colors
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Primary**: Electric Blue (#3B82F6) - AI/Tech vibes
+- **Secondary**: Vibrant Purple (#A855F7) - Innovation  
+- **Accent**: Cyber Green (#10B981) - Success/Active
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Typography
 
-## Deploy on Vercel
+- **Headings & Body**: Inter
+- **Code**: JetBrains Mono
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Effects
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Glassmorphism with backdrop blur
+- Animated gradient backgrounds
+- Floating particle effects
+- Smooth scroll animations
+- Glow effects on hover
+
+## 📄 Pages
+
+### Current
+- **Landing Page** (`/`) - Hero, Features, How It Works, CTA
+
+### Planned
+- **About** (`/about`) - Mission, vision, team
+- **Documentation** (`/docs`) - Getting started, API reference
+- **Pricing** (`/pricing`) - Pricing tiers
+- **Playground** (`/playground`) - Interactive API demo
+
+## 🚀 Deployment
+
+This project is optimized for deployment on [Vercel](https://vercel.com):
+
+```bash
+npm run build
+```
+
+## 📝 License
+
+MIT
+
+## 🤝 Contributing
+
+Contributions welcome! Please read our contributing guidelines first.
+
+---
+
+Built with ❤️ for the MCP-Council platform
