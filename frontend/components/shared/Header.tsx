@@ -48,11 +48,11 @@ export default function Header() {
 
                         {/* Desktop CTA */}
                         <div className="hidden md:flex items-center gap-4">
-                            <Button variant="ghost" size="sm">
-                                Sign In
+                            <Button variant="ghost" size="sm" asChild>
+                                <a href="/auth/login">Sign In</a>
                             </Button>
-                            <Button size="sm" className="glow-primary">
-                                Get Started
+                            <Button size="sm" className="glow-primary" asChild>
+                                <a href="/auth/signup">Get Started</a>
                             </Button>
                         </div>
 
