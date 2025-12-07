@@ -2,7 +2,7 @@ import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Sparkles, LogOut } from "lucide-react";
+import { Sparkles, LogOut, Settings } from "lucide-react";
 import { signOut } from "../auth/actions";
 
 export default async function DashboardPage() {
@@ -31,12 +31,20 @@ export default async function DashboardPage() {
                         </div>
                     </div>
 
-                    <form action={signOut}>
-                        <Button variant="outline" type="submit">
-                            <LogOut className="w-4 h-4 mr-2" />
-                            Sign Out
+                    <div className="flex gap-3">
+                        <Button variant="outline" asChild>
+                            <a href="/settings">
+                                <Settings className="w-4 h-4 mr-2" />
+                                Settings
+                            </a>
                         </Button>
-                    </form>
+                        <form action={signOut}>
+                            <Button variant="outline" type="submit">
+                                <LogOut className="w-4 h-4 mr-2" />
+                                Sign Out
+                            </Button>
+                        </form>
+                    </div>
                 </div>
 
                 {/* Stats Grid */}
